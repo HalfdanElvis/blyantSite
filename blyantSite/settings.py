@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-onuv00#0ym7f47d_j+)))t)ngt&6vrj-8_88$1f8932mmqd!=*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["127.0.0.1","blyanten.dk", "www.blyanten.dk"]
 
@@ -116,13 +116,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+
 STATIC_URL = '/static/'
+STATICFILES_DIRS = []  # only if you have extra static dirs
+STATIC_ROOT = "/home/blyant/blyantSite/staticfiles"
 
-# Remove STATICFILES_DIRS or leave empty if you don't have a separate static folder
-STATICFILES_DIRS = []
-
-# Where collectstatic will copy all static files for production
-STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 
