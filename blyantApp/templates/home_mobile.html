@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}BlYanTeN. - Hjem{% endblock %}
+
+{% block content %}
+
+<div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false">
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    {% for img in banners %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <img src="{% static img %}" class="d-block w-100 carousel-image">
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="hero-overlay">
+    <p>BlYanTeN.</p>
+  </div>
+
+  
+
+</div>
+
+<!-- ===============================
+     Image + Text Section
+================================= -->
+<div class="container py-5">
+
+  <div class="row align-items-start">
+
+
+    <!-- Left: Carousel of images -->
+    <div class="col-md-6">
+      <div id="profileCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+        <div class="carousel-inner">
+          {% for img in images %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              <img src="{% static img %}" class="d-block w-100 rounded " alt="Profile image {{ forloop.counter }}">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Text -->
+    <div class="col-md-6 mt-4">
+      <h2>BlYanTeN.</h2>
+      <p class="lead">
+        Blyanten er ikke bare en gruppe, ikke bare en samling af herlige mennesker og ikke bare familie. Blyanten er mere end alt det. <br>
+        Blyanten er selve blodet der pumper i dine åre, musikken du hører med dine øre, festen der efterlader dig smadret og tilfreds. <br>
+        Blyanten er livet selv. Det er kærlighed, ære og respekt på en totalt respektløs format. <br>
+        Blyanten er suppen og brødet der serveres varmt og kærligt, hvor der må kæmpes om krummerne.<br>
+        Blyanten er de mange små stunder og de få lange perioder. <br>
+        Blyanten er de mennesker der omgår os, om det er til en enkel fest eller i en livstid<br><br>
+
+
+        Blyanten er os, <br>
+        og Blyanten er dig der kommer med som gæst.<br>
+
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}BlYanTeN. - Projekter{% endblock %}
+{% block content %}
+
+<div class="d-flex flex-column justify-content-center align-items-center  py-4 text-center">
+<h1>Projekter</h1>
+</div>
+
+
+<section class = "projekt">
+    <div class="container py-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6 mt-4">
+            <img src="{% static 'blyantApp/images/projekter/barcelona.jpg' %}" alt="Barcelonastol" class="d-block w-100 rounded">
+        </div>
+
+        <!-- Right: Text -->
+        <div class="col-md-6 mt-4">
+        <h2>Vejledning Til Brug Af Barcelonastol</h2>
+        <p class="lead">
+            <i>Berlin - Penthouse Suite</i> <br>
+            <small> <i>fotografi på print - anno 2024</i> </small><br>
+            <small> <i>5462px x 8192px</i> <br> </small>
+
+            Værket tager en melankolsk men sammentidig humeristisk stilling til den moderne geopolitiske situation. Som navnet
+            hentyder til giver værket observatøren en indgangsvinkel i hvordan en Barcelonastol kan bruges. Barcelonastolen, et generalt symbol
+            på velhavenhed og rigdomme gøres i det øjeblik tilgængelig til den gængse borger, og det øjeblik spildes ikke. Set fra starten (Venstre øvre hjørne)
+            ligger kunstværkeret seriøst ud med simple positioner som <i>Standard</i> og <i>Nonchalant</i>, men absurditeten og hykleriet gøres hurtigt klart
+            for observatøren. Med stillinger som <i>Den svære, Tingfinderen</i> og ikke mindst <i>Frank Hvam</i> sker der noget hos observatøren.
+            Er dette symbol (Barcelonastolen) virkelig et symbol? Burde man tage individer mere seriøst bare på grund af deres materielle overflåd?
+            Hvad kan man enlig tillade sig? <br> <br>
+            
+            Disse spørgsmål og meget mere går gennem hovedet på den gængse observatør, da det pludselig slå klik. Dette er ikke en brugsvejledning til
+            hvorden en burde sidde på en Barcelonastol. Dette er en brugsvejledning til livet, et kald til aktion der skriger til dig! Du må ikke bare sidde
+            på din flade, du må tage aktion. Du må ikke vurdere nogle højere end deres moral baseret på materielle objekter eller rigdomme. Tag bourgeoisiet 
+            og lav en <i>Den Såbare</i> på dem. Ik giv dem den respekt de så desperat hungrer efter, men hvis dem hvor lidt deres rigdomme betyder i modstand
+            af et samlet folk. <br> <br>
+
+            
+            Det ville ikke være en underdrivelse at sige at værket er lige så relevant hvis ikke mere i verdenssituationen som den er i dag.
+            Det er så sandeligt et værk der strækker sig tidsaldere da det står udenfor tid som koncept. <br> <br>
+
+
+            <a href="{% static 'files/barcelona-FullSize.png' %}" 
+                download 
+                class="btn btn-outline-dark">
+                Download Full Size Image
+            </a>
+
+            
+        </p>
+        </div>
+
+
+    </div>
+    </div>
+</section>
+
+{% endblock %}
