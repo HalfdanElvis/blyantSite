@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: Run deploy script
-        run: /home/blyant/blyantSite/deploy.sh
+        run: /home/blyant/deploy.sh
